@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        textarea.Whiteboard {
+            resize: none;
+            background-color: #F1F1F1;
+            border: none;
+            height: 300px;
+            width: 500px;
+            font-size: 50px;
+
+            white-space: normal;
+            text-align: justify;
+            -moz-text-align-last: center;
+            text-align-last: center;
+        }
+
+        div.justified {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1 align="center">Type anything slowly</h1>
+<div class="justified">
+    <textarea class="Whiteboard" type="text" onchange="typingText()" placeholder="Type something..." cols="20" rows="10"
+              id="faketyping"></textarea>
+</div>
+
+<script>
+    "use strict";
+
+
+    function typingText(){
+        let typing = document.getElementById("faketyping").value;
+        console.log(typing);
+    }
+
+
+</script>
+
+
+</body>
+
+
+</html>
